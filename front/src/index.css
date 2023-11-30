@@ -1,0 +1,73 @@
+@import url(./reset.css);
+/*@import url(./shared/globalStyles.css);*/
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*////////////////////////////////////////////*/
+
+.app {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    overflow: hidden;
+}
+
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    padding: 16px 16px;
+
+    overflow-y: auto;
+    flex-shrink: 0;
+}
+
+.sidebar-container-href {
+    gap: 16px;
+    justify-content: space-between !important;
+}
+
+.main-container {
+    flex-grow: 1;
+    padding: 16px 16px;
+
+    overflow: auto;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+
+    cursor: pointer;
+}
+
+.side-menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/*.sidebar-container .btn {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    color: rgb(191, 68, 68);*/
+/*}*/
